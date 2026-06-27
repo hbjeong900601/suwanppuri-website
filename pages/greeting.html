@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인사말씀 - 수완뿌리학원</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../pages.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo_w.png" alt="수완뿌리학원" class="logo-img logo-white">
+        <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
+      </a>
+      <nav>
+                <ul class="nav-list" id="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="greeting.html" class="nav-link">학원소개</a>
+            <div class="nav-dropdown">
+              <a href="greeting.html">인사말씀</a>
+              <a href="organization.html">조직도</a>
+              <a href="tour.html">둘러보기</a>
+              <a href="location.html">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="classes.html" class="nav-link">수업안내</a>
+            <div class="nav-dropdown">
+              <a href="classes.html">수업안내</a>
+              <a href="gnb-english.html">GNB 영어</a>
+              <a href="management.html">학업관리</a>
+              <a href="tuition.html">교습비 안내</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="qna.html" class="nav-link">고객센터</a>
+            <div class="nav-dropdown">
+              <a href="qna.html">Q \& A</a>
+              <a href="inquiry.html">1:1 문의</a>
+              <a href="gallery.html">갤러리</a>
+              <a href="board.html">게시판</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">ABOUT US</div>
+      <h1 class="page-hero-title">인사말씀</h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span>인사말씀
+      </div>
+    </div>
+  </section>
+
+  <nav class="sub-nav">
+    <div class="sub-nav-inner">
+      <a href="greeting.html" class="sub-nav-link active">인사말씀</a>
+      <a href="organization.html" class="sub-nav-link">조직도</a>
+      <a href="tour.html" class="sub-nav-link">둘러보기</a>
+      <a href="location.html" class="sub-nav-link">찾아오시는 길</a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div class="content-section">
+      <h2 class="content-title">인사말씀</h2>
+      <p class="content-text">수완뿌리학원 홈페이지를 찾아주셔서 감사합니다.</p>
+      <p class="content-text">저희 수완뿌리학원은 초등학교부터 고등학교까지 학생들의 학습 여정을 함께하며 미래를 준비하는 영수 단과전문학원입니다. 학생들이 자신만의 꿈을 실현할 수 있도록, 전문적인 교육과 체계적인 커리큘럼을 통해 최적의 학습 환경을 제공합니다.</p>
+      <p class="content-text">수학은 단순히 공식과 문제 풀이를 넘어, 사고력과 논리력을 키워주는 중요한 학문입니다. 수완뿌리학원에서는 기초 개념을 탄탄히 다지는 것에서 시작해, 고난도 문제를 스스로 해결할 수 있는 자신감을 키워줍니다.</p>
+      <h3 class="content-subtitle">아이들의 꿈을 향한 멋진 여정, 수완뿌리학원과 함께하세요</h3>
+      <p class="content-text">저는 30년 동안 아이들을 사랑하는 교육자로서 오직 한 길만을 걸어왔습니다. 수완뿌리학원은 단순히 지식을 전달하는 데 그치지 않고, 학생들이 스스로 목표를 설정하고 성취할 수 있는 힘을 길러주는 것을 중요하게 생각합니다.</p>
+      <div class="content-signature">수완뿌리학원장 <strong>송기석</strong></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>Copyright © 수완뿌리학원. All rights reserved.</p>
+        <div class="footer-info">
+          <span>광주광역시 광산구 장덕로 55</span>
+          <span>전화 : 062) 954-0500</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
+    nt.addEventListener('click',()=>nl.classList.toggle('open'));
+    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
+  </script>
+
+</body>
+</html>

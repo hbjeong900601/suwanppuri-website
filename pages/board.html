@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판 - 수완뿌리학원</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../pages.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo_w.png" alt="수완뿌리학원" class="logo-img logo-white">
+        <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
+      </a>
+      <nav>
+                <ul class="nav-list" id="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="greeting.html" class="nav-link">학원소개</a>
+            <div class="nav-dropdown">
+              <a href="greeting.html">인사말씀</a>
+              <a href="organization.html">조직도</a>
+              <a href="tour.html">둘러보기</a>
+              <a href="location.html">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="classes.html" class="nav-link">수업안내</a>
+            <div class="nav-dropdown">
+              <a href="classes.html">수업안내</a>
+              <a href="gnb-english.html">GNB 영어</a>
+              <a href="management.html">학업관리</a>
+              <a href="tuition.html">교습비 안내</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="qna.html" class="nav-link">고객센터</a>
+            <div class="nav-dropdown">
+              <a href="qna.html">Q \& A</a>
+              <a href="inquiry.html">1:1 문의</a>
+              <a href="gallery.html">갤러리</a>
+              <a href="board.html">게시판</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">SUPPORT</div>
+      <h1 class="page-hero-title">게시판</h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="qna.html">고객센터</a><span class="sep">›</span>게시판
+      </div>
+    </div>
+  </section>
+
+  <nav class="sub-nav">
+    <div class="sub-nav-inner">
+      <a href="qna.html" class="sub-nav-link">Q & A</a>
+      <a href="inquiry.html" class="sub-nav-link">1:1 문의</a>
+      <a href="gallery.html" class="sub-nav-link">갤러리</a>
+      <a href="board.html" class="sub-nav-link active">게시판</a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div class="content-section">
+      <h2 class="content-title">게시판</h2>
+      <p class="content-text">수완뿌리학원의 공지사항 및 소식을 전합니다.</p>
+      <div class="board-list">
+        <div class="board-item"><span class="board-num">5</span><span class="board-title">2025년 여름방학 특강 안내</span><span class="board-date">2025.06.15</span></div>
+        <div class="board-item"><span class="board-num">4</span><span class="board-title">HME 수학 경시대회 접수 안내</span><span class="board-date">2025.05.20</span></div>
+        <div class="board-item"><span class="board-num">3</span><span class="board-title">학원 운영시간 변경 안내 (5월)</span><span class="board-date">2025.04.28</span></div>
+        <div class="board-item"><span class="board-num">2</span><span class="board-title">2025년 1학기 중간고사 대비 특강</span><span class="board-date">2025.03.15</span></div>
+        <div class="board-item"><span class="board-num">1</span><span class="board-title">수완뿌리학원 신규 개강 안내</span><span class="board-date">2025.02.01</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>Copyright © 수완뿌리학원. All rights reserved.</p>
+        <div class="footer-info">
+          <span>광주광역시 광산구 장덕로 55</span>
+          <span>전화 : 062) 954-0500</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
+    nt.addEventListener('click',()=>nl.classList.toggle('open'));
+    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학업관리 - 수완뿌리학원</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../pages.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo_w.png" alt="수완뿌리학원" class="logo-img logo-white">
+        <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
+      </a>
+      <nav>
+                <ul class="nav-list" id="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="greeting.html" class="nav-link">학원소개</a>
+            <div class="nav-dropdown">
+              <a href="greeting.html">인사말씀</a>
+              <a href="organization.html">조직도</a>
+              <a href="tour.html">둘러보기</a>
+              <a href="location.html">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="classes.html" class="nav-link">수업안내</a>
+            <div class="nav-dropdown">
+              <a href="classes.html">수업안내</a>
+              <a href="gnb-english.html">GNB 영어</a>
+              <a href="management.html">학업관리</a>
+              <a href="tuition.html">교습비 안내</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="qna.html" class="nav-link">고객센터</a>
+            <div class="nav-dropdown">
+              <a href="qna.html">Q \& A</a>
+              <a href="inquiry.html">1:1 문의</a>
+              <a href="gallery.html">갤러리</a>
+              <a href="board.html">게시판</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">PROGRAMS</div>
+      <h1 class="page-hero-title">학업관리</h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="classes.html">수업안내</a><span class="sep">›</span>학업관리
+      </div>
+    </div>
+  </section>
+
+  <nav class="sub-nav">
+    <div class="sub-nav-inner">
+      <a href="classes.html" class="sub-nav-link">수업안내</a>
+      <a href="gnb-english.html" class="sub-nav-link">GNB 영어</a>
+      <a href="management.html" class="sub-nav-link active">학업관리</a>
+      <a href="tuition.html" class="sub-nav-link">교습비 안내</a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div class="content-section">
+      <h2 class="content-title">체계적인 학업관리 시스템</h2>
+      <p class="content-text">수완뿌리학원은 개인별 맞춤 학습 관리 시스템으로 학생 한 명 한 명에게 최적화된 학습 계획과 진도 관리를 제공합니다.</p>
+      <div class="info-grid">
+        <div class="info-card"><div class="info-card-icon">📊</div><h3 class="info-card-title">개인별 학습 진단</h3><p class="info-card-desc">학생별 실력을 정밀 진단하여 맞춤형 학습 계획을 수립합니다.</p></div>
+        <div class="info-card"><div class="info-card-icon">📝</div><h3 class="info-card-title">일일 학습 체크</h3><p class="info-card-desc">매일 학습 내용과 과제 수행 여부를 꼼꼼히 체크합니다.</p></div>
+        <div class="info-card"><div class="info-card-icon">📞</div><h3 class="info-card-title">학부모 상담</h3><p class="info-card-desc">정기적인 학부모 상담을 통해 학생의 학습 상황을 공유합니다.</p></div>
+        <div class="info-card"><div class="info-card-icon">📈</div><h3 class="info-card-title">성적 분석</h3><p class="info-card-desc">정기 테스트 결과를 분석하여 취약 영역을 집중 보강합니다.</p></div>
+        <div class="info-card"><div class="info-card-icon">🎯</div><h3 class="info-card-title">수행평가 대비</h3><p class="info-card-desc">학교 수행평가에 맞춘 체계적인 대비 프로그램을 운영합니다.</p></div>
+        <div class="info-card"><div class="info-card-icon">📋</div><h3 class="info-card-title">출결 관리</h3><p class="info-card-desc">학생 출석 현황을 실시간 관리하고 학부모님께 안내합니다.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>Copyright © 수완뿌리학원. All rights reserved.</p>
+        <div class="footer-info">
+          <span>광주광역시 광산구 장덕로 55</span>
+          <span>전화 : 062) 954-0500</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
+    nt.addEventListener('click',()=>nl.classList.toggle('open'));
+    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
+  </script>
+
+</body>
+</html>

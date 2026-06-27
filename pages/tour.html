@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>둘러보기 - 수완뿌리학원</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../pages.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo_w.png" alt="수완뿌리학원" class="logo-img logo-white">
+        <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
+      </a>
+      <nav>
+                <ul class="nav-list" id="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="greeting.html" class="nav-link">학원소개</a>
+            <div class="nav-dropdown">
+              <a href="greeting.html">인사말씀</a>
+              <a href="organization.html">조직도</a>
+              <a href="tour.html">둘러보기</a>
+              <a href="location.html">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="classes.html" class="nav-link">수업안내</a>
+            <div class="nav-dropdown">
+              <a href="classes.html">수업안내</a>
+              <a href="gnb-english.html">GNB 영어</a>
+              <a href="management.html">학업관리</a>
+              <a href="tuition.html">교습비 안내</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="qna.html" class="nav-link">고객센터</a>
+            <div class="nav-dropdown">
+              <a href="qna.html">Q \& A</a>
+              <a href="inquiry.html">1:1 문의</a>
+              <a href="gallery.html">갤러리</a>
+              <a href="board.html">게시판</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label">ABOUT US</div>
+      <h1 class="page-hero-title">둘러보기</h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span>둘러보기
+      </div>
+    </div>
+  </section>
+
+  <nav class="sub-nav">
+    <div class="sub-nav-inner">
+      <a href="greeting.html" class="sub-nav-link">인사말씀</a>
+      <a href="organization.html" class="sub-nav-link">조직도</a>
+      <a href="tour.html" class="sub-nav-link active">둘러보기</a>
+      <a href="location.html" class="sub-nav-link">찾아오시는 길</a>
+    </div>
+  </nav>
+
+  <main class="page-content wide">
+    <div class="content-section">
+      <h2 class="content-title">학원 둘러보기</h2>
+      <p class="content-text">수완뿌리학원의 쾌적하고 현대적인 학습 환경을 소개합니다.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="../images/classroom.jpg" alt="교실"><div class="gallery-item-body"><div class="gallery-item-title">쾌적한 교실 환경</div></div></div>
+        <div class="gallery-item"><img src="../images/english-class.jpg" alt="영어"><div class="gallery-item-body"><div class="gallery-item-title">GNB 영어 교실</div></div></div>
+        <div class="gallery-item"><img src="../images/math-study.jpg" alt="수학"><div class="gallery-item-body"><div class="gallery-item-title">수학 학습 공간</div></div></div>
+        <div class="gallery-item"><img src="../images/hero-students.jpg" alt="학생"><div class="gallery-item-body"><div class="gallery-item-title">학생 활동 모습</div></div></div>
+        <div class="gallery-item"><img src="../images/awards.jpg" alt="수상"><div class="gallery-item-body"><div class="gallery-item-title">수상 현장</div></div></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>Copyright © 수완뿌리학원. All rights reserved.</p>
+        <div class="footer-info">
+          <span>광주광역시 광산구 장덕로 55</span>
+          <span>전화 : 062) 954-0500</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
+    nt.addEventListener('click',()=>nl.classList.toggle('open'));
+    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
+  </script>
+
+</body>
+</html>

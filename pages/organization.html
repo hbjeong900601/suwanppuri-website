@@ -16,12 +16,12 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
-            <a href="greeting.html" class="nav-link">학원소개</a>
+            <a href="greeting.html" class="nav-link active">학원소개</a>
             <div class="nav-dropdown">
               <a href="greeting.html">인사말씀</a>
-              <a href="organization.html">조직도</a>
+              <a href="organization.html" class="active">조직도</a>
               <a href="tour.html">둘러보기</a>
               <a href="location.html">찾아오시는 길</a>
             </div>
@@ -39,7 +39,7 @@
           <li class="nav-item has-dropdown">
             <a href="qna.html" class="nav-link">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
               <a href="board.html">게시판</a>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">ABOUT US</div>
       <h1 class="page-hero-title">조직도</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span>조직도
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span><span>조직도</span>
       </div>
     </div>
   </section>
@@ -73,36 +73,123 @@
 
   <main class="page-content">
     <div class="content-section">
-      <h2 class="content-title">조직도</h2>
-      <p class="content-text">수완뿌리학원의 조직 구성을 소개합니다. 각 부서의 전문 인력들이 협력하여 최상의 교육 서비스를 제공합니다.</p>
+      <h2 class="content-title">학원 조직도</h2>
+      <p class="content-text">수완뿌리학원은 교무·학생관리·과목별 전문 부서가 유기적으로 협력하여 학생 한 명 한 명에게 최상의 교육 서비스를 제공합니다.</p>
       <div class="org-chart">
-        <div class="org-level"><div class="org-card head"><div class="org-card-role">원장</div><div class="org-card-name">송기석</div></div></div>
+        <div class="org-level">
+          <div class="org-card head">
+            <div class="org-card-role">Director</div>
+            <div class="org-card-name">대표원장 송기석</div>
+            <div class="org-card-desc">학원 총괄 및 교육과정 감수</div>
+          </div>
+        </div>
         <div class="org-connector"></div>
-        <div class="org-level"><div class="org-card"><div class="org-card-role">교무부</div><div class="org-card-name">교육과정 운영</div></div><div class="org-card"><div class="org-card-role">학생관리부</div><div class="org-card-name">학생 생활 관리</div></div></div>
+        <div class="org-level">
+          <div class="org-card">
+            <div class="org-card-role">Academic Affairs</div>
+            <div class="org-card-name">교무기획부</div>
+            <div class="org-card-desc">초·중·고 교육과정 및 평가 운영</div>
+          </div>
+          <div class="org-card">
+            <div class="org-card-role">Student Care</div>
+            <div class="org-card-name">학생생활관리부</div>
+            <div class="org-card-desc">출결·과제·학부모 정기 상담</div>
+          </div>
+        </div>
         <div class="org-connector"></div>
-        <div class="org-level"><div class="org-card"><div class="org-card-role">영어부</div><div class="org-card-name">GNB 영어</div></div><div class="org-card"><div class="org-card-role">수학부</div><div class="org-card-name">수학 전문</div></div><div class="org-card"><div class="org-card-role">행정부</div><div class="org-card-name">행정 지원</div></div></div>
+        <div class="org-level">
+          <div class="org-card">
+            <div class="org-card-role">English Dept</div>
+            <div class="org-card-name">GNB 영어전담부</div>
+            <div class="org-card-desc">15레벨 스피킹·라이팅·내신</div>
+          </div>
+          <div class="org-card">
+            <div class="org-card-role">Mathematics Dept</div>
+            <div class="org-card-name">수학전문단과부</div>
+            <div class="org-card-desc">개념·심화·HME 경시·수능</div>
+          </div>
+          <div class="org-card">
+            <div class="org-card-role">Administration</div>
+            <div class="org-card-name">행정지원부</div>
+            <div class="org-card-desc">입학 안내 및 교육 환경 관리</div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>

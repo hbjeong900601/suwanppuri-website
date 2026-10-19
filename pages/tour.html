@@ -16,13 +16,13 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
-            <a href="greeting.html" class="nav-link">학원소개</a>
+            <a href="greeting.html" class="nav-link active">학원소개</a>
             <div class="nav-dropdown">
               <a href="greeting.html">인사말씀</a>
               <a href="organization.html">조직도</a>
-              <a href="tour.html">둘러보기</a>
+              <a href="tour.html" class="active">둘러보기</a>
               <a href="location.html">찾아오시는 길</a>
             </div>
           </li>
@@ -39,7 +39,7 @@
           <li class="nav-item has-dropdown">
             <a href="qna.html" class="nav-link">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
               <a href="board.html">게시판</a>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">ABOUT US</div>
       <h1 class="page-hero-title">둘러보기</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span>둘러보기
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span><span>둘러보기</span>
       </div>
     </div>
   </section>
@@ -73,36 +73,120 @@
 
   <main class="page-content wide">
     <div class="content-section">
-      <h2 class="content-title">학원 둘러보기</h2>
-      <p class="content-text">수완뿌리학원의 쾌적하고 현대적인 학습 환경을 소개합니다.</p>
+      <h2 class="content-title">학원 교육시설 둘러보기</h2>
+      <p class="content-text">학생들이 흔들림 없이 학습에 몰입할 수 있도록 쾌적하고 현대적인 강의실과 자습 환경을 갖추고 있습니다. 사진을 클릭하면 크게 보실 수 있습니다.</p>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="../images/classroom.jpg" alt="교실"><div class="gallery-item-body"><div class="gallery-item-title">쾌적한 교실 환경</div></div></div>
-        <div class="gallery-item"><img src="../images/english-class.jpg" alt="영어"><div class="gallery-item-body"><div class="gallery-item-title">GNB 영어 교실</div></div></div>
-        <div class="gallery-item"><img src="../images/math-study.jpg" alt="수학"><div class="gallery-item-body"><div class="gallery-item-title">수학 학습 공간</div></div></div>
-        <div class="gallery-item"><img src="../images/hero-students.jpg" alt="학생"><div class="gallery-item-body"><div class="gallery-item-title">학생 활동 모습</div></div></div>
-        <div class="gallery-item"><img src="../images/awards.jpg" alt="수상"><div class="gallery-item-body"><div class="gallery-item-title">수상 현장</div></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="../images/classroom.jpg" alt="쾌적한 교실 환경"></div><div class="gallery-item-body"><div class="gallery-item-title">쾌적한 집중 강의실</div><span class="gallery-item-tag">강의시설</span></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="../images/english-class.jpg" alt="GNB 영어 교실"></div><div class="gallery-item-body"><div class="gallery-item-title">GNB 영어 전용 학습실</div><span class="gallery-item-tag">영어관</span></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="../images/math-study.jpg" alt="수학 학습 공간"></div><div class="gallery-item-body"><div class="gallery-item-title">수학 심화·클리닉 공간</div><span class="gallery-item-tag">수학관</span></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="../images/hero-students.jpg" alt="학생 활동 모습"></div><div class="gallery-item-body"><div class="gallery-item-title">1:1 맞춤 질의응답 라운지</div><span class="gallery-item-tag">학습공간</span></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="../images/awards.jpg" alt="수상 현장"></div><div class="gallery-item-body"><div class="gallery-item-title">명예의 전당 · 수상 전시</div><span class="gallery-item-tag">수상실적</span></div></div>
       </div>
     </div>
   </main>
 
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightbox-img">
+      <div class="lightbox-bar">
+        <span class="lightbox-caption" id="lightbox-caption"></span>
+        <button class="lightbox-close" id="lightbox-close">닫기 ✕</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const lbModal = document.getElementById('lightbox-modal');
+    const lbImg = document.getElementById('lightbox-img');
+    const lbCap = document.getElementById('lightbox-caption');
+    const lbClose = document.getElementById('lightbox-close');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.querySelector('.gallery-item-title');
+        if (img && lbModal) {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lbCap.textContent = title ? title.textContent : img.alt;
+          lbModal.classList.add('open');
+        }
+      });
+    });
+    if (lbClose) lbClose.addEventListener('click', () => lbModal.classList.remove('open'));
+    if (lbModal) lbModal.addEventListener('click', (e) => { if (e.target === lbModal) lbModal.classList.remove('open'); });
+  </script>
+
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>

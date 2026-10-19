@@ -16,7 +16,7 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
             <a href="greeting.html" class="nav-link">학원소개</a>
             <div class="nav-dropdown">
@@ -37,9 +37,9 @@
           </li>
           <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
           <li class="nav-item has-dropdown">
-            <a href="qna.html" class="nav-link">고객센터</a>
+            <a href="qna.html" class="nav-link active">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html" class="active">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
               <a href="board.html">게시판</a>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">SUPPORT</div>
       <h1 class="page-hero-title">Q & A</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="qna.html">고객센터</a><span class="sep">›</span>Q & A
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="qna.html">고객센터</a><span class="sep">›</span><span>Q & A</span>
       </div>
     </div>
   </section>
@@ -73,37 +73,142 @@
 
   <main class="page-content">
     <div class="content-section">
-      <h2 class="content-title">자주 묻는 질문</h2>
-      <p class="content-text">학부모님들이 자주 문의하시는 내용을 모았습니다.</p>
-      <div class="info-grid">
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">수업 시간은 어떻게 되나요?</h3><p class="info-card-desc">초등부 오후 2시~6시, 중등부 오후 6시~10시, 고등부 오후 7시~10시에 수업이 진행됩니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">무료 체험수업이 가능한가요?</h3><p class="info-card-desc">네, 무료 레벨테스트와 체험수업을 제공합니다. 전화(062-954-0500)로 예약해 주세요.</p></div>
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">반 편성은 어떻게 이루어지나요?</h3><p class="info-card-desc">무학년 레벨별 수업으로, 레벨테스트 결과에 따라 15개 반으로 세분화하여 운영합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">교습비는 얼마인가요?</h3><p class="info-card-desc">교육청 신고 금액으로, 전화(062-954-0500) 또는 방문 상담 시 안내합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">학부모 상담은 가능한가요?</h3><p class="info-card-desc">정기 상담 외 수시 상담 가능합니다. 전화 또는 방문으로 예약해 주세요.</p></div>
-        <div class="info-card"><div class="info-card-icon">❓</div><h3 class="info-card-title">주차가 가능한가요?</h3><p class="info-card-desc">건물 내 주차장을 이용하실 수 있습니다.</p></div>
+      <h2 class="content-title">자주 묻는 질문 (FAQ)</h2>
+      <p class="content-text">학부모님과 학생들이 입학 및 수업에 관해 가장 자주 문의하시는 질문과 답변을 모았습니다. 질문을 클릭하시면 상세 답변을 확인하실 수 있습니다.</p>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>과정별 수업 시간대는 어떻게 운영되나요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">초등부는 오후 2시 ~ 6시, 중등부는 오후 6시 ~ 10시, 고등부는 오후 7시 ~ 10시 사이에 레벨별·학년별 시간표로 운영됩니다. 학생의 학교 하교 시간과 타 학원 일정을 고려하여 상담 시 최적의 시간표를 안내해 드립니다.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>입학 전 무료 레벨테스트나 상담이 가능한가요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">네, 물론입니다. 무료 레벨테스트와 1:1 학습 진단 상담을 상시 진행하고 있습니다. 대표전화(062-954-0500) 또는 홈페이지 [1:1 문의] 메뉴를 통해 희망 일시를 남겨주시면 대기 없이 안내받으실 수 있습니다.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>반 편성은 학년별로 하나요, 실력별로 하나요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">영어 과정은 총 15개 반 무학년 수준별 레벨 시스템으로 세분화되어 있어 학생의 현재 실력에 꼭 맞는 반에서 학습합니다. 수학 과정 역시 기초 개념반부터 심화·경시(HME) 대비반까지 수준별 맞춤 수업이 이루어집니다.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>영어와 수학 중 한 과목만 선택해서 수강할 수도 있나요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">네, 수완뿌리학원은 영어·수학 단과전문 학원이므로 영어 또는 수학 단일 과목 수강은 물론, 영·수 통합 수강 시 시간표가 자연스럽게 연계되도록 맞춤 설계가 가능합니다.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>학교 시험(내신) 기간이나 수행평가 대비는 어떻게 진행되나요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">중·고등 내신 기간에는 학교별 교과서 및 부교재 변형 문제 풀이, 서술형 영작 집중 훈련, 수학 취약 유형 오답 클리닉이 체계적으로 진행되며, 학기 중 수행평가 과제도 감수 및 밀착 지도합니다.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span class="faq-q-left"><span class="faq-q-badge">Q</span><span>방문 상담 시 주차가 가능한가요?</span></span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">네, 학원 건물(광주광역시 광산구 장덕로 55) 내 전용 주차장을 편리하게 이용하실 수 있습니다.</div>
+        </div>
       </div>
+      <div class="faq-cta-box">
+        <div class="faq-cta-text">
+          <strong>더 궁금하신 점이 있으신가요?</strong>
+          <span>1:1 온라인 문의를 남겨주시거나 전화 주시면 친절히 안내해 드립니다.</span>
+        </div>
+        <a href="inquiry.html" class="btn btn-primary" style="background:var(--primary);color:white;padding:12px 22px;font-size:0.86rem;">1:1 문의 남기기 →</a>
+      </div>
+      <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            item.classList.toggle('open');
+          });
+        });
+      </script>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>

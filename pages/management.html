@@ -16,7 +16,7 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
             <a href="greeting.html" class="nav-link">학원소개</a>
             <div class="nav-dropdown">
@@ -27,11 +27,11 @@
             </div>
           </li>
           <li class="nav-item has-dropdown">
-            <a href="classes.html" class="nav-link">수업안내</a>
+            <a href="classes.html" class="nav-link active">수업안내</a>
             <div class="nav-dropdown">
               <a href="classes.html">수업안내</a>
               <a href="gnb-english.html">GNB 영어</a>
-              <a href="management.html">학업관리</a>
+              <a href="management.html" class="active">학업관리</a>
               <a href="tuition.html">교습비 안내</a>
             </div>
           </li>
@@ -39,7 +39,7 @@
           <li class="nav-item has-dropdown">
             <a href="qna.html" class="nav-link">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
               <a href="board.html">게시판</a>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">PROGRAMS</div>
       <h1 class="page-hero-title">학업관리</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="classes.html">수업안내</a><span class="sep">›</span>학업관리
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="classes.html">수업안내</a><span class="sep">›</span><span>학업관리</span>
       </div>
     </div>
   </section>
@@ -73,37 +73,133 @@
 
   <main class="page-content">
     <div class="content-section">
-      <h2 class="content-title">체계적인 학업관리 시스템</h2>
-      <p class="content-text">수완뿌리학원은 개인별 맞춤 학습 관리 시스템으로 학생 한 명 한 명에게 최적화된 학습 계획과 진도 관리를 제공합니다.</p>
+      <h2 class="content-title">빈틈없는 6단계 밀착 학업관리</h2>
+      <p class="content-text">수완뿌리학원은 입학 시점의 정밀 레벨 진단부터 일일 학습 확인, 오답 클리닉, 정기 학부모 브리핑까지 학생 한 명 한 명에게 최적화된 관리 시스템을 운영합니다.</p>
       <div class="info-grid">
-        <div class="info-card"><div class="info-card-icon">📊</div><h3 class="info-card-title">개인별 학습 진단</h3><p class="info-card-desc">학생별 실력을 정밀 진단하여 맞춤형 학습 계획을 수립합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">📝</div><h3 class="info-card-title">일일 학습 체크</h3><p class="info-card-desc">매일 학습 내용과 과제 수행 여부를 꼼꼼히 체크합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">📞</div><h3 class="info-card-title">학부모 상담</h3><p class="info-card-desc">정기적인 학부모 상담을 통해 학생의 학습 상황을 공유합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">📈</div><h3 class="info-card-title">성적 분석</h3><p class="info-card-desc">정기 테스트 결과를 분석하여 취약 영역을 집중 보강합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">🎯</div><h3 class="info-card-title">수행평가 대비</h3><p class="info-card-desc">학교 수행평가에 맞춘 체계적인 대비 프로그램을 운영합니다.</p></div>
-        <div class="info-card"><div class="info-card-icon">📋</div><h3 class="info-card-title">출결 관리</h3><p class="info-card-desc">학생 출석 현황을 실시간 관리하고 학부모님께 안내합니다.</p></div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <span class="info-card-step">CARE 01</span>
+          </div>
+          <h3 class="info-card-title">개인별 정밀 학습 진단</h3>
+          <p class="info-card-desc">입학 전 영역별 레벨테스트와 학습 성향 분석을 통해 현재 실력에 꼭 맞는 반 배정과 개인별 학습 로드맵을 수립합니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <span class="info-card-step">CARE 02</span>
+          </div>
+          <h3 class="info-card-title">일일 학습 &amp; 과제 완수 체크</h3>
+          <p class="info-card-desc">매 수업 당일 배운 핵심 개념 이해도와 과제 수행 여부를 전담 강사가 1:1로 확인하고 미흡한 부분은 당일 보충 지도합니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+            <span class="info-card-step">CARE 03</span>
+          </div>
+          <h3 class="info-card-title">정기 성취도 평가 &amp; 오답 노트</h3>
+          <p class="info-card-desc">단원별·월별 정기 테스트 결과를 데이터로 분석하여 취약 유형을 끝까지 해결하는 맞춤형 오답 클리닉을 진행합니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <span class="info-card-step">CARE 04</span>
+          </div>
+          <h3 class="info-card-title">학교별 내신·수행평가 집중 대비</h3>
+          <p class="info-card-desc">인근 초·중·고 학교별 시험 출제 경향과 수행평가 일정에 맞춘 밀착 대비 프로그램으로 실질적인 성적 향상을 이끕니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></div>
+            <span class="info-card-step">CARE 05</span>
+          </div>
+          <h3 class="info-card-title">실시간 안심 출결 관리</h3>
+          <p class="info-card-desc">등·하원 출석 현황과 수업 참여 태도를 꼼꼼하게 기록하고 관리하여 학부모님께서 안심하고 맡기실 수 있습니다.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <span class="info-card-step">CARE 06</span>
+          </div>
+          <h3 class="info-card-title">정기 학부모 소통 &amp; 진로 상담</h3>
+          <p class="info-card-desc">학생의 학습 성취도와 보완점, 향후 진학 방향을 정기 전화·대면 상담을 통해 학부모님과 투명하게 공유합니다.</p>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>

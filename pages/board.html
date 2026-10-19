@@ -16,7 +16,7 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
             <a href="greeting.html" class="nav-link">학원소개</a>
             <div class="nav-dropdown">
@@ -37,18 +37,18 @@
           </li>
           <li class="nav-item"><a href="../index.html#awards" class="nav-link">수상실적</a></li>
           <li class="nav-item has-dropdown">
-            <a href="qna.html" class="nav-link">고객센터</a>
+            <a href="qna.html" class="nav-link active">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
-              <a href="board.html">게시판</a>
+              <a href="board.html" class="active">게시판</a>
             </div>
           </li>
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">SUPPORT</div>
       <h1 class="page-hero-title">게시판</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="qna.html">고객센터</a><span class="sep">›</span>게시판
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="qna.html">고객센터</a><span class="sep">›</span><span>게시판</span>
       </div>
     </div>
   </section>
@@ -73,36 +73,148 @@
 
   <main class="page-content">
     <div class="content-section">
-      <h2 class="content-title">게시판</h2>
-      <p class="content-text">수완뿌리학원의 공지사항 및 소식을 전합니다.</p>
+      <h2 class="content-title">공지사항 및 학원 소식</h2>
+      <p class="content-text">수완뿌리학원의 학사 일정, 특강 개강, 경시대회 접수 등 주요 소식을 안내해 드립니다. 제목을 클릭하시면 상세 내용을 확인하실 수 있습니다.</p>
       <div class="board-list">
-        <div class="board-item"><span class="board-num">5</span><span class="board-title">2025년 여름방학 특강 안내</span><span class="board-date">2025.06.15</span></div>
-        <div class="board-item"><span class="board-num">4</span><span class="board-title">HME 수학 경시대회 접수 안내</span><span class="board-date">2025.05.20</span></div>
-        <div class="board-item"><span class="board-num">3</span><span class="board-title">학원 운영시간 변경 안내 (5월)</span><span class="board-date">2025.04.28</span></div>
-        <div class="board-item"><span class="board-num">2</span><span class="board-title">2025년 1학기 중간고사 대비 특강</span><span class="board-date">2025.03.15</span></div>
-        <div class="board-item"><span class="board-num">1</span><span class="board-title">수완뿌리학원 신규 개강 안내</span><span class="board-date">2025.02.01</span></div>
+        <div class="board-row open">
+          <button type="button" class="board-item">
+            <span class="board-num">5</span>
+            <span class="board-badge primary">특강</span>
+            <span class="board-title">방학 집중 영어·수학 실력 완성 특강 개강 안내</span>
+            <span class="board-date">2025.06.15</span>
+          </button>
+          <div class="board-body">
+            다가오는 방학을 맞이하여 기초 문법 완성 및 서술형 Writing 특강과 수학 학기 선행·심화 집중반을 개강합니다. 재원생 및 신규생 모두 레벨테스트 후 수강 신청이 가능하며, 반별 정원 마감 시 조기 마감될 수 있으니 학원 데스크(062-954-0500)로 문의 바랍니다.
+          </div>
+        </div>
+        <div class="board-row">
+          <button type="button" class="board-item">
+            <span class="board-num">4</span>
+            <span class="board-badge">대회</span>
+            <span class="board-title">HME 해법수학 학력평가 경시대회 접수 및 대비반 안내</span>
+            <span class="board-date">2025.05.20</span>
+          </button>
+          <div class="board-body">
+            4년 연속 전국 1등 및 최우수학원상을 수상한 수완뿌리학원에서 HME 해법수학 경시대회 참가 접수를 진행합니다. 응시 학생들을 위한 기출 유형 분석 및 심화 대비 특강이 함께 운영됩니다.
+          </div>
+        </div>
+        <div class="board-row">
+          <button type="button" class="board-item">
+            <span class="board-num">3</span>
+            <span class="board-badge">공지</span>
+            <span class="board-title">가정의 달 학원 학사 운영 및 휴원 일정 안내</span>
+            <span class="board-date">2025.04.28</span>
+          </button>
+          <div class="board-body">
+            법정 공휴일 학사 일정 및 보강 수업 안내입니다. 공휴일 당일은 휴원하며, 각 반별 결손 없는 진도 운영을 위해 담당 선생님 안내에 따라 보충 수업이 진행됩니다.
+          </div>
+        </div>
+        <div class="board-row">
+          <button type="button" class="board-item">
+            <span class="board-num">2</span>
+            <span class="board-badge primary">내신</span>
+            <span class="board-title">중·고등 지필평가(중간·기말고사) 완벽 대비 기간 운영 안내</span>
+            <span class="board-date">2025.03.15</span>
+          </button>
+          <div class="board-body">
+            학교별 내신 시험 4주 전부터 내신 집중 대비 체제로 전환됩니다. 학교별 기출 분석 프린트, 서술형 영작 첨삭, 수학 취약 단원 1:1 오답 클리닉이 주말 및 정규 시간에 집중 진행됩니다.
+          </div>
+        </div>
+        <div class="board-row">
+          <button type="button" class="board-item">
+            <span class="board-num">1</span>
+            <span class="board-badge">안내</span>
+            <span class="board-title">수완뿌리·지앤비학원 신학기 신규생 모집 및 무료 레벨테스트 안내</span>
+            <span class="board-date">2025.02.01</span>
+          </button>
+          <div class="board-body">
+            새 학기를 맞아 초·중·고 영어(GNB 15레벨) 및 수학 단과 신규 원생을 모집합니다. 입학 전 1:1 정밀 레벨테스트와 원장님 학습 상담을 무료로 받아보실 수 있습니다.
+          </div>
+        </div>
       </div>
+      <script>
+        document.querySelectorAll('.board-item').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const row = btn.closest('.board-row');
+            row.classList.toggle('open');
+          });
+        });
+      </script>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>

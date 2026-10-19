@@ -16,11 +16,11 @@
         <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img logo-dark">
       </a>
       <nav>
-                <ul class="nav-list" id="nav-list">
+        <ul class="nav-list" id="nav-list">
           <li class="nav-item has-dropdown">
-            <a href="greeting.html" class="nav-link">학원소개</a>
+            <a href="greeting.html" class="nav-link active">학원소개</a>
             <div class="nav-dropdown">
-              <a href="greeting.html">인사말씀</a>
+              <a href="greeting.html" class="active">인사말씀</a>
               <a href="organization.html">조직도</a>
               <a href="tour.html">둘러보기</a>
               <a href="location.html">찾아오시는 길</a>
@@ -39,7 +39,7 @@
           <li class="nav-item has-dropdown">
             <a href="qna.html" class="nav-link">고객센터</a>
             <div class="nav-dropdown">
-              <a href="qna.html">Q \& A</a>
+              <a href="qna.html">Q &amp; A</a>
               <a href="inquiry.html">1:1 문의</a>
               <a href="gallery.html">갤러리</a>
               <a href="board.html">게시판</a>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a href="inquiry.html" class="nav-link nav-cta">문의하기</a></li>
         </ul>
       </nav>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
       <div class="page-hero-label">ABOUT US</div>
       <h1 class="page-hero-title">인사말씀</h1>
       <div class="page-hero-breadcrumb">
-        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span>인사말씀
+        <a href="../index.html">홈</a><span class="sep">›</span><a href="greeting.html">학원소개</a><span class="sep">›</span><span>인사말씀</span>
       </div>
     </div>
   </section>
@@ -73,34 +73,95 @@
 
   <main class="page-content">
     <div class="content-section">
-      <h2 class="content-title">인사말씀</h2>
-      <p class="content-text">수완뿌리학원 홈페이지를 찾아주셔서 감사합니다.</p>
-      <p class="content-text">저희 수완뿌리학원은 초등학교부터 고등학교까지 학생들의 학습 여정을 함께하며 미래를 준비하는 영수 단과전문학원입니다. 학생들이 자신만의 꿈을 실현할 수 있도록, 전문적인 교육과 체계적인 커리큘럼을 통해 최적의 학습 환경을 제공합니다.</p>
-      <p class="content-text">수학은 단순히 공식과 문제 풀이를 넘어, 사고력과 논리력을 키워주는 중요한 학문입니다. 수완뿌리학원에서는 기초 개념을 탄탄히 다지는 것에서 시작해, 고난도 문제를 스스로 해결할 수 있는 자신감을 키워줍니다.</p>
+      <h2 class="content-title">원장 인사말씀</h2>
+      <div class="philosophy-quote">
+        <div class="philosophy-quote-text">"기초부터 자세히, 모르면 알 때까지 — 흔들리지 않는 뿌리가 깊은 실력을 만듭니다."</div>
+        <div class="philosophy-quote-sub">수완뿌리·지앤비학원 핵심 교육 철학</div>
+      </div>
+      <p class="content-text">안녕하십니까, 수완뿌리학원 홈페이지를 찾아주신 학부모님과 학생 여러분을 진심으로 환영합니다.</p>
+      <p class="content-text">저희 수완뿌리학원은 초등학교부터 고등학교까지 학생들의 학습 여정을 함께하며 미래를 준비하는 <strong>영어·수학 단과전문학원</strong>입니다. 학생들이 자신만의 꿈을 실현할 수 있도록, 검증된 전문 교육과 체계적인 커리큘럼을 통해 최적의 학습 환경을 제공합니다.</p>
+      <p class="content-text">영어와 수학은 단순히 공식 암기와 문제 풀이를 넘어, 사고력과 논리력을 키워주는 가장 중요한 기반 학문입니다. 수완뿌리학원에서는 기초 개념을 탄탄히 다지는 것에서 시작해, 고난도 문제를 스스로 해결할 수 있는 자생력과 자신감을 길러줍니다.</p>
       <h3 class="content-subtitle">아이들의 꿈을 향한 멋진 여정, 수완뿌리학원과 함께하세요</h3>
-      <p class="content-text">저는 30년 동안 아이들을 사랑하는 교육자로서 오직 한 길만을 걸어왔습니다. 수완뿌리학원은 단순히 지식을 전달하는 데 그치지 않고, 학생들이 스스로 목표를 설정하고 성취할 수 있는 힘을 길러주는 것을 중요하게 생각합니다.</p>
-      <div class="content-signature">수완뿌리학원장 <strong>송기석</strong></div>
+      <p class="content-text">저는 30년 동안 아이들을 사랑하는 교육자로서 오직 한 길만을 걸어왔습니다. 수완뿌리학원은 단순히 지식을 전달하는 데 그치지 않고, 학생들이 스스로 목표를 설정하고 성취할 수 있는 힘을 길러주는 것을 가장 중요하게 생각합니다.</p>
+      <div class="content-signature">
+        <span class="content-signature-role">수완뿌리·지앤비학원 대표원장</span>
+        <span class="content-signature-name">원장 <strong>송 기 석</strong></span>
+      </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="수완뿌리학원" class="logo-img" height="52">
+          </a>
+          <p>기초부터 자세히, 모르면 알 때까지.<br>영어·수학 전문 학원 수완뿌리·지앤비학원이<br>아이들의 밝은 미래를 만들어갑니다.</p>
+        </div>
+        <div class="footer-column">
+          <h4>학원소개</h4>
+          <ul>
+            <li><a href="greeting.html">인사말씀</a></li>
+            <li><a href="organization.html">조직도</a></li>
+            <li><a href="tour.html">둘러보기</a></li>
+            <li><a href="location.html">찾아오시는 길</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>수업안내</h4>
+          <ul>
+            <li><a href="classes.html">수업안내</a></li>
+            <li><a href="gnb-english.html">GNB 영어</a></li>
+            <li><a href="management.html">학업관리</a></li>
+            <li><a href="tuition.html">교습비 안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>고객센터</h4>
+          <ul>
+            <li><a href="qna.html">Q &amp; A</a></li>
+            <li><a href="inquiry.html">1:1 문의</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="board.html">게시판</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <p>Copyright © 수완뿌리학원. All rights reserved.</p>
         <div class="footer-info">
-          <span>광주광역시 광산구 장덕로 55</span>
+          <span>등록번호 : 제 4268호</span>
+          <span>사업자 번호 : 173-88-01154</span>
+          <span>주소 : 광주광역시 광산구 장덕로 55</span>
           <span>전화 : 062) 954-0500</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('header').classList.add('scrolled');
-    const nt=document.getElementById('nav-toggle'),nl=document.getElementById('nav-list');
-    nt.addEventListener('click',()=>nl.classList.toggle('open'));
-    nl.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>nl.classList.remove('open')));
-  </script>
+  <div class="floating-dock">
+    <a href="tel:062-954-0500" class="dock-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>062-954-0500</span>
+    </a>
+    <a href="inquiry.html" class="dock-btn primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>1:1 상담문의</span>
+    </a>
+    <button class="scroll-top" id="scroll-top" aria-label="맨 위로">↑</button>
+  </div>
 
+  <script>
+    const nt = document.getElementById('nav-toggle'), nl = document.getElementById('nav-list');
+    if (nt && nl) {
+      nt.addEventListener('click', () => { nl.classList.toggle('open'); nt.classList.toggle('active'); });
+      nl.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { nl.classList.remove('open'); nt.classList.remove('active'); }));
+    }
+    const st = document.getElementById('scroll-top');
+    if (st) {
+      window.addEventListener('scroll', () => { st.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
 </body>
 </html>
